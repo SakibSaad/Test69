@@ -9,7 +9,7 @@ export default function Page() {
       </div>
       <div
         className="bg-cover bg-center h-[1000px]"
-        style={{ backgroundImage: "url('/WholeTeam2.jpg')" }}
+        style={{ backgroundImage: "url('/advisorbg.png')" }}
       >
         <div className="mt-5 flex flex-col items-center justify-center">
           <h1 className="text-6xl md:text-8xl font-bold text-white drop-shadow-4xl">
