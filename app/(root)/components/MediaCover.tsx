@@ -1,5 +1,6 @@
 import { GlobalNavbar } from "@/components/Navbar";
 import HorizontalImageSlider from "@/components/ui/image-slider";
+import { myfont } from "@/font";
 
 export function MediaCover() {
   const images = [
@@ -96,10 +97,11 @@ export function MediaCover() {
         style={{ backgroundImage: `url('/Earth.png')` }}
       >
         {/* <div className="py-10"><GlobalNavbar></GlobalNavbar></div> */}
-        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-16 lg:space-x-60 p-10">
-          <h1 className="text-4xl font-extrabold tracking-tight md:text-6xl lg:text-7xl max-w-md drop-shadow-2xl text-center md:text-left">
-            <p>
-              Media <br /> Outstorm <br /> After <br />
+        <div className="flex flex-col md:flex-row items-center justify-center md:space-x-16 lg:space-x-72 p-10">
+          <h1 className="text-3xl md:text-6xl lg:text-6xl drop-shadow-2xl">
+            <p className={
+                myfont.className }>
+              MEDIA OUT<br/>STORM AFTER <br />
               URC 2023
             </p>
           </h1>

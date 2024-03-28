@@ -12,8 +12,8 @@ export default function Page() {
         className="bg-cover bg-center h-[1000px]"
         style={{ backgroundImage: "url('/team2023/WholeTeam2.jpg')" }}
       >
-        <div className="mt-5 flex flex-col items-center justify-center">
-          <h1 className="text-8xl font-bold text-white drop-shadow-4xl">
+        <div className="mt-5 flex flex-col items-center justify-center ml-2">
+          <h1 className="text-8xl font-bold text-white drop-shadow-4xl mt-9" >
             TELOS
           </h1>
           <p className="text-3xl drop-shadow-lg text-white">UIU MARS ROVER</p>

@@ -8,7 +8,7 @@ export function BlogRender({ blog }: { blog: BlogPost }) {
       <div className="w-full mx-auto mb-10 text-left ">
         <div className="pb-6 mb-8 border-b border-slate-500">
           <h1
-            className="mb-3 text-3xl font-bold text-slate-50 md:leading-tight md:text-4xl"
+            className="mt-12 mb-3 text-3xl font-bold text-slate-50 md:leading-tight md:text-4xl"
             itemProp="headline"
             title="Rise of Tailwind - A Utility First CSS Framework"
           >

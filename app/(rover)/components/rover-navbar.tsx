@@ -94,7 +94,8 @@ export function RoverButton() {
 
 export function TeamButton() {
   return (
-    <div className="z-50 flex justify-center mt-4 mx-4">
+    <div className="flex justify-center">
+      <div className="ml-[-1px] z-20 flex md:mt-5 mx-4 fixed md:top-0">
       <div className="flex overflow-hidden border-none divide-x rounded-2xl rtl:flex-row-reverse dark:divide-white w-min text-base drop-shadow-md ">
         <Link
           href="/team/urc22"
@@ -117,6 +118,8 @@ export function TeamButton() {
         </Link>
       </div>
     </div>
+    </div>
+    
   );
 }
 

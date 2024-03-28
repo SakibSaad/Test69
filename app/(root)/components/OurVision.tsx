@@ -8,6 +8,7 @@ import * as THREE from "three";
 import { View } from "@/components/canvas/View";
 import Image from "next/image";
 import { GlobalNavbar } from "@/components/Navbar";
+import { myfont } from "@/font";
 
 const Mars2 = () => {
   const mars_diffuse = useLoader(TextureLoader, "/mars_diffuse.jpg");
@@ -58,54 +59,69 @@ export function OurVisionSection() {
         </div>
         <div className="z-[0] sky-background w-full h-full absolute bg-[url('/stars_e.jpg')] bg-cover overflow-hidden"></div>
 
-
-
         <div className="3d-background w-full h-full absolute  overflow-hidden">
-
           <View className="relative h-full w-full">
             <Sun2 />
             <Mars2 />
           </View>
-
-
         </div>
 
-
         <div className="navigation z-10 w-4/5 flex p-5 items-center flex-col lg:flex-row h-full justify-between">
-  <div className="w-full lg:w-1/2 flex items-center lg:items-start flex-col">
-    <h1 className="ml-0 text-center md:ml-0 md:text-center mt-6 md:mt-16 lg:ml-0 lg:mt-0 lg:text-left tracking-widest text-2xl lg:text-3xl font-black md:mb-10 mb-5">
-      Our Vision
-      <div className="ml-[-200px] md:ml-[-320px] mt-5 w-[880px] md:w-[1000px] lg:w-[750px] lg:ml-0 border-neutral-300 border-b-[2px] border-opacity-50"></div>
-    </h1>
-    
-    <p className="text-left  justify-center">
-      We are a team of students passionate to pioneer the development of a thriving robotics ecosystem in Bangladesh. We aspire to cultivate a culture of innovation by establishing a dedicated research laboratory focused on robotics. Our mission is to drive advancements in robotics, machine learning, and artificial intelligence, fostering progress and knowledge in these feilds for a brighter future. 
-    </p>
-    {/* Add more content as needed */}
-    <div className="mt-10 md:mt-8 lg:mt-20">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrEtYJUl7xNgvPeX9mhFKqmrKgF0R6sOjgczemnVicpL_TXw/closedform"><img src="button.png" alt="" /></a>
-    </div>
-  </div>
+          <div className="w-full lg:w-1/2 flex items-center lg:items-start flex-col">
+            <h1
+              className={
+                myfont.className +
+                " ml-0 text-center md:ml-0 md:text-center mt-6 md:mt-16 lg:mt-[-5px] lg:text-left tracking-widest text-2xl lg:text-3xl font-black md:mb-10 mb-5"
+              }
+            >
+              Our Vision
+              <div className="ml-[-200px] md:ml-[-320px] mt-5 w-[880px] md:w-[1000px] lg:w-[750px] lg:ml-0 border-neutral-300 border-b-[2px] border-opacity-50"></div>
+            </h1>
 
-  
-  <div className="navigation z-10 w-full lg:ml-12 lg:w-1/2 flex p-5 items-center lg:items-start flex-col justify-between">
-    <h1 className=" ml-0 text-center text-xl sm:text-2xl md:text-4xl lg:ml-10 lg:mt-20 pl-[80] md:text-center lg:text-left tracking-widest lg:text-6xl md:mt-5 font-black mb-10">
-      WE DREAM AT THE COSMIC SCALE
-    </h1>
-    <Image
-      className="z-10 mx-auto lg:ml-0"
-      src="/vid.png"
-      width={700.99}
-      height={380.88}
-      alt=""
-    />
-  </div>
-</div>
+            <p className="text-left  justify-center">
+              We are a team of students passionate to pioneer the development of
+              a thriving robotics ecosystem in Bangladesh. 
+            </p>
+            <p className="text-left  justify-center mt-5">
+            We are dedicated to fostering a culture of innovation through the establishment of a specialized research laboratory with a primary focus on robotics. Our goal is to cultivate a workforce that possesses the skills and expertise needed to excel in the field of robotics.  
+            </p>
 
-       
+            <p className="text-left  justify-center mt-5">
+            Our mission is to drive
+              advancements in robotics, machine learning, and artificial
+              intelligence, fostering progress and knowledge in these fields for
+              a brighter future. 
+            </p>
+
+            
+            {/* Add more content as needed */}
+            <div className="mt-10 md:mt-8 lg:mt-20">
+              <a href="https://docs.google.com/forms/d/e/1FAIpQLSdrEtYJUl7xNgvPeX9mhFKqmrKgF0R6sOjgczemnVicpL_TXw/closedform">
+                <img src="button.png" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div className="navigation z-10 w-full lg:ml-12 lg:w-1/2 flex p-5 items-center lg:items-start flex-col justify-between">
+
+            
+            <h1
+              className={
+                myfont.className +" ml-0 text-center text-xl sm:text-2xl md:text-4xl lg:ml-10 lg:mt-20 pl-[80] md:text-center lg:text-left lg:text-6xl md:mt-5 font-black mb-10"}>
+              WE DREAM AT THE COSMIC SCALE
+            </h1>
+            <Image
+              className="z-10 mx-auto lg:ml-0"
+              src="/vid.png"
+              width={700.99}
+              height={380.88}
+              alt=""
+            />
+          </div>
+        </div>
+
         <div className="navigation w-full border-neutral-300 border-b-[2px] border-opacity-50  mb-16 "></div>
       </div>
-      
     </>
   );
 }

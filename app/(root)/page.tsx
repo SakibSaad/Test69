@@ -33,9 +33,9 @@ export default function Page() {
           height={519.09}
           alt=""
         />
-        <MediaCover />
         {/* <OurAchievement /> */}
         <OurVisionSection />
+        <MediaCover />
         <Sponsor/>
         <Footer/>
       </main>

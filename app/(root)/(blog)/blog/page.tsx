@@ -5,7 +5,7 @@ export default function BlogPage() {
   return (
     <>
       <section className="px-4 pt-10 pb-24 mx-auto max-w-7xl">
-        <h2 className="mb-2 text-3xl font-extrabold leading-tight text-white">
+        <h2 className="mt-16 mb-2 text-3xl font-extrabold leading-tight text-white">
           Blog Posts
         </h2>
         <p className="mb-20 text-lg text-slate-400">

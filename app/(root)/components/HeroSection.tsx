@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { myfont } from "@/font";
 
 export function HeroSection() {
   return (
@@ -23,27 +24,33 @@ export function HeroSection() {
         </div>
       </nav> */}
 
-<div className="z-10 w-full md:w-[1200px] h-screen flex justify-center items-center md:mt-0 mt-[-200px]">
-  <div className="flex justify-end items-center w-full md:w-3/4 h-3/4 flex-col text-center">
-    <div className="tracking-[1rem] text-xl mb-4 font-light">
-      UIU MARS ROVER TEAM
-    </div>
-    <Image
-      className="mb-12"
-      src="/flare.png"
-      width={1100}
-      height={8}
-      alt=""
-    />
-    <h1 className="font-akira tracking-widest font-black mb-8 md:mb-12 lg:text-4xl md:text-2xl sm:text-xl md:mt-0">
-      UMRT, the newborn conviction of shaping unattainability about Mars.
-    </h1>
-    <div className="w-full md:max-w-[1089px] sm:max-w-full">
-      <Image src="/brands.png" width={1089} height={64} alt="" />
-    </div>
-  </div>
-</div>
+      <div className="z-10 w-full md:w-[1200px] h-screen flex justify-center items-center md:mt-0 mt-[-200px]">
+        <div className="flex justify-end items-center w-full h-3/4 flex-col text-center">
+          <div className="tracking-[1rem] text-xl mb-4 font-light">
+            UIU MARS ROVER TEAM
+          </div>
+          <Image
+            className="mb-12"
+            src="/flare.png"
+            width={1100}
+            height={8}
+            alt=""
+          />
+          <h1
+            className={
+              myfont.className +
+              " tracking-widest font-black mb-8 md:mb-12 lg:text-3xl md:text-2xl sm:text-lg md:mt-0"
+            }
+          >
+            UMRT, the newborn conviction of shaping unattainability about Mars.
+          </h1>
 
+          <div className="w-full md:max-w-[1089px] sm:max-w-full">
+            <Image src="/brands.png" width={1089} height={64} alt="" />
+          </div>
+        </div>
+      </div>
     </>
   );
 }
+

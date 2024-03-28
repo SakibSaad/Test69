@@ -12,7 +12,7 @@ export default function Page() {
         style={{ backgroundImage: "url('/advisorbg.png')" }}
       >
         <div className="mt-5 flex flex-col items-center justify-center">
-          <h1 className="text-6xl md:text-8xl font-bold text-white drop-shadow-4xl">
+          <h1 className="mt-20 text-6xl md:text-8xl font-bold text-white drop-shadow-4xl">
             ADVISORS
           </h1>
         </div>
@@ -29,7 +29,7 @@ export default function Page() {
                 </div> */}
         <div>
           <h2 className="text-4xl text-center font-bold py-10">
-            DIRECTOR OF CIAR
+            DIRECTOR OF CAIR
           </h2>
         </div>
 
